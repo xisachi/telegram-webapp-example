@@ -1,0 +1,17 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Telegram WebApp</title>
+  <meta charset="UTF-8">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <h2>Salom, Telegram foydalanuvchisi!</h2>
+  <script>
+    const tg = window.Telegram.WebApp;
+    tg.expand();
+    document.write("Ismingiz: " + tg.initDataUnsafe.user.first_name);
+  </script>
+</body>
+</html>
